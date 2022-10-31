@@ -11,7 +11,8 @@ body{
   margin: 0px;
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 130px 1fr;
+  background-color: lightgray;
 }
 
 .sidebar{
@@ -21,11 +22,6 @@ body{
   display: grid;
   grid-template-rows: 50px 250px 125px 500px;
   gap: 50px;
-}
-
-.header{
-  grid-area: 1 / 2 / 2 / 3;
-  background-color: red;
 }
 
 .sidebar-top{
@@ -59,4 +55,86 @@ body{
 #logo-small{
   max-height: 15px;
   max-width: 10px;
+}
+
+.header{
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+
+.header-topleft{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#search{
+  max-width: 25px;
+  min-height: 25px;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+input{
+  height: 20px;
+  width: 500px;
+  size: 5ch;
+  border-radius: 30px;
+  background-color: lightgray;
+  border-style: none;
+}
+
+.header-topright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#bell{
+  height: 25px;
+  width: 25px;
+}
+
+#mainlogo{
+  height: 40px;
+  width: 40px;
+}
+
+.header-bottomleft{
+  display: grid;
+  grid-template-columns: 60px 2fr;
+  grid-template-rows: 20px 1fr;
+  gap: 5px;
+}
+
+#mainlogo2{
+  height: 60px;
+  width: 60px;
+  grid-row: 1 / 3;
+  
+}
+
+.header-bottomright{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button{
+  border-radius: 25px;
+  background-color: blue;
+  color: white;
+  border-style: none;
+  padding: 10px 25px
+}
+
+.maincontent{
+  grid-area: 2 / 2 / 3 / 3;
+  
 }
